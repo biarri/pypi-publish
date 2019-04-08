@@ -1,0 +1,7 @@
+steps:
+   deploy_to_pypi:
+      title: Publishing To PyPi
+      image: codefresh/pypi-publish
+      environment:
+        - TWINE_USERNAME=pypi_user
+        - TWINE_PASSWORD=pypi_password

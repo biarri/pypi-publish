@@ -1,6 +1,7 @@
 # Codefresh pypi-publish Plugin
 
 Codefresh plugin `release-to-pypi` can be used to publish images to pypi (or a private pip repository) using [twine](https://pypi.org/project/twine/).
+If necessary, [register](https://pypi.org/account/register/) for an account on pypi to obtain the username and password credentials to provide.
 
 ## Usage
 
@@ -23,11 +24,11 @@ steps:
 
 ## Environment Variables
 
+- **required** `TWINE_USERNAME` - username to authenticate to the repository as
+- **required** `TWINE_PASSWORD` - password to authenticate to the repository as
 - **optional** `TWINE_REPOSITORY_URL` - repository to upload to
-- **optional** `TWINE_USERNAME` - username to authenticate to the repository as
-- **optional** `TWINE_PASSWORD` - password to authenticate to the repository as
 
-## How to use
+## How to build and test
 
 Build the image with the following command:
 

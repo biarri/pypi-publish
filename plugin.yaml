@@ -1,0 +1,16 @@
+title: Publish on PyPi
+version: 0.1
+image: codefresh/pypi-publish:latest
+description: Publishes a pip package to PyPi (or private) registry
+categories:
+  - Deployment
+sources:
+  - 'https://github.com/codefresh-contrib/pypi-publish'
+icon: 'https://pypi.org/static/images/logo-large.svg'
+maintainers:
+  - name: David Holsgrove
+envs:
+  - name: TWINE_USERNAME
+    description: 'username to authenticate to the repository (required)'
+  - name: TWINE_PASSWORD
+    description: 'password to authenticate to the repository (required)'
